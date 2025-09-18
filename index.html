@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVF B2B CRM</title>
+    <link rel="icon" href="img/salesforce-no-type-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nabvar -->
+    <nav class="navbar">
+      <!-- left -->
+      <div class="left">
+        <span class="menu" onclick="openMenu()"
+          ><i class="ri-menu-line"></i
+        ></span>
+        <img class="logo-img" src="img/salesforce-no-type-logo.svg" alt="" />
+      </div>
+
+      <!-- right -->
+      <div class="right">
+        <span class="icon"><i class="ri-search-line"></i></span>
+        <span class="icon"><i class="ri-user-fill"></i></span>
+        <button class="btn">Try for free</button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="mySidebar" class="sidebar">
+        <span class="closebtn" onclick="closeMenu()"
+          ><i class="ri-close-line"></i
+        ></span>
+
+        <a href="#"
+          >Products <i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+        <a href="#"
+          >Industries <i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+        <a href="#"
+          >Customers <i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+        <a href="#"
+          >Learning <i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+        <a href="#">Support <i class="ri-arrow-right-s-line rightarrow"></i></a>
+        <a href="#">Company <i class="ri-arrow-right-s-line rightarrow"></i></a>
+        <a href="#"
+          >Salesforce+ <i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+
+        <br /><br />
+
+        <a href="#">Login<i class="ri-arrow-right-s-line rightarrow"></i></a>
+        <a href="#">Contact<i class="ri-arrow-right-s-line rightarrow"></i></a>
+        <a href="#"
+          >Change Region<i class="ri-arrow-right-s-line rightarrow"></i
+        ></a>
+
+        <div class="sidebar-bottom">1800-420-7332</div>
+      </div>
+    </nav>
+
+    <!-- Header with dropdown -->
+    <div class="header" onclick="toggleMenu()">
+      <h3>SVF B2B</h3>
+      <span id="mainArrow" class="arrow"
+        ><i class="ri-arrow-down-s-line"></i
+      ></span>
+    </div>
+
+    <!-- Dropdown Content -->
+    <div class="content" id="dropdown">
+      <ul>
+        <li class="content-line">Overview</li>
+
+        <!-- CRM Dropdown -->
+        <li class="content-line" onclick="toggleMenusub(this)">
+          What is CRM?
+          <span class="sub-arrow"><i class="ri-arrow-down-s-line"></i></span>
+        </li>
+        <ul class="submenu">
+          <li>What is CRM?</li>
+          <li>CRM Software</li>
+          <li>CRM Implementation</li>
+          <li>CRM Features</li>
+          <li>CRM Best Practices</li>
+          <li>Benefits of CRM</li>
+          <li>CRM Examples</li>
+          <li>History of CRM</li>
+        </ul>
+
+        <!-- Solutions Dropdown -->
+        <li class="content-line" onclick="toggleMenusub(this)">
+          Solutions
+          <span class="sub-arrow"><i class="ri-arrow-down-s-line"></i></span>
+        </li>
+        <ul class="submenu">
+          <br />
+          <p class="submenuHeader">Business Size</p>
+          <li>Small Business CRM</li>
+          <li>Startup CRM</li>
+          <li class="content-line"></li>
+          <p class="submenuHeader">Industry</p>
+          <li>Real Estate CRM</li>
+          <li>B2B CRM</li>
+          <li class="content-line"></li>
+          <p class="submenuHeader">Capabilities</p>
+          <li>AI CRM</li>
+          <li>CRM Automation</li>
+          <li>Social CRM</li>
+          <li>Custom CRM</li>
+          <li>Mobile CRM</li>
+          <li>Cloud CRM</li>
+          <li>CRM Reporting</li>
+          <li>CRM Project Management</li>
+        </ul>
+
+        <!-- Resources Dropdown -->
+        <li class="content-line" onclick="toggleMenusub(this)">
+          Resources
+          <span class="sub-arrow"><i class="ri-arrow-down-s-line"></i></span>
+        </li>
+        <ul class="submenu">
+          <li>Free CRM</li>
+          <li>Best CRM</li>
+          <li>CRM Strategy</li>
+          <li>CRM Integration</li>
+          <li>CRM Database</li>
+          <li>Generation CRM</li>
+          <li>CRM Certification</li>
+          <li>CRM Free Trial</li>
+        </ul>
+      </ul>
+    </div>
+    <center>
+      <div class="Limitedtime">
+        <h3>
+          Limited time offer for Indian SMBs – 40% off Sales Cloud, Marketing
+          Cloud & Service Cloud. <a href="#">Know more</a>
+        </h3>
+      </div>
+    </center>
+
+    <!-- section-one -->
+    <section class="hero container">
+      <div class="text-section">
+        <h4>SVF B2B</h4>
+        <h1>The world's <br /><span>SVF B2B AI CRM.</span></h1>
+        <p>
+          Attract more prospects, close more deals and strengthen customer
+          relationships by uniting sales, service, marketing, commerce and IT on
+          one integrated platform.
+        </p>
+        <button class="demoone">Watch demo</button>
+        <button class="demo">Try our CRM free</button>
+      </div>
+
+      <div class="video-section">
+        <video controls autoplay muted loop>
+          <source src="img/Salesforce CRM_.mp4" type="video/mp4" />
+          <source src="img/Salesforce CRM_.webm" type="video/webm" />
+          This browser does not support HTML video.
+        </video>
+      </div>
+      <div class="social-icons">
+        <a href="#">Share the story</a>
+        <a href="#" class="social-iconsbtn"
+          ><i class="ri-linkedin-box-fill"></i
+        ></a>
+        <a href="#" class="social-iconsbtn"
+          ><i class="ri-twitter-x-line"></i
+        ></a>
+        <a href="#" class="social-iconsbtn"
+          ><i class="ri-facebook-circle-fill"></i
+        ></a>
+        <a href="#" class="social-iconsbtn"><i class="ri-link"></i></a>
+      </div>
+    </section>
+
+    <!-- section-two -->
+
+    <center>
+      <h2 class="header-two">
+        Surpass your business goals and exceed <br />
+        customer expectations with Salesforce.
+      </h2>
+    </center>
+
+    <div class="section-two">
+      <div class="cards-container">
+        <div class="card">
+          <img src="img/1.webp" alt="" />
+
+          <span class="tag">Resource</span>
+          <h3>What is CRM?</h3>
+          <p>
+            Learn how customer relationship management software helps all your
+            teams work together.
+          </p>
+          <a href="#" class="crm">Learn about CRM</a>
+        </div>
+        <div class="card">
+          <img src="img/2.webp" alt="Card 2" />
+
+          <span class="tag">Guide</span>
+          <h3>It’s easy to get started with CRM</h3>
+          <p>
+            Follow these steps to get your team up for a successful CRM
+            implementation.
+          </p>
+          <a href="#" class="crm">Find out more</a>
+        </div>
+
+        <div class="card">
+          <img src="img/3.webp" alt="Card 3" />
+
+          <span class="tag">Starter Suite</span>
+          <h3>Try Salesforce Starter - free for 30 days</h3>
+          <p>
+            No credit card required. Preconfigured reports and guided content
+            included.
+          </p>
+          <a href="#" class="crm">Try for free</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- section-three -->
+    <div class="promo-section">
+      <!-- Left Text -->
+      <div class="promo-text">
+        <h2>
+          Salesforce for SMBs <br />
+          <span>Now at Special Pricing</span>
+        </h2>
+        <br />
+        <p>
+          For the first time, Salesforce India is making it easier than ever for
+          Indian SMBs to compete – and win.
+        </p>
+        <p>
+          For a limited time, get
+          <strong>40% off our flagship solutions</strong> – Sales Cloud, Service
+          Cloud, and Marketing Cloud – along with fast-track implementation
+          packages, to go live in just 2 weeks.
+        </p>
+        <a href="#" class="btnbox"
+          >Know more <i class="ri-external-link-line"></i
+        ></a>
+      </div>
+      <!-- Right Image -->
+      <div class="promo-image">
+        <img src="img/promo.webp" alt="Promo Image" />
+      </div>
+    </div>
+
+    <h2 class="header-two">
+      CRM that serves customers, boosts
+      <br />productivity and grows revenue.
+    </h2>
+
+    <div class="feature-section container">
+      <div class="feature-content">
+        <h2>
+          Build relationships with a single, shared view of every customer.
+        </h2>
+        <br />
+        <p>
+          Empower employees to deliver more personalised experiences with a
+          <a href="">holistic view </a> of every interaction across sales,
+          service, marketing, commerce and more.
+        </p>
+      </div>
+      <div class="feature-image">
+        <img src="img/feature-image.webp" alt="CRM features" />
+      </div>
+    </div>
+    <div class="feature-section container">
+      <div class="feature-image">
+        <img src="img/feature-image2.webp" alt="AI features" />
+      </div>
+      <div class="feature-content">
+        <h2>Scale trusted AI across every experience.</h2>
+        <br />
+        <p>
+          Increase productivity and grow revenue with AI capabilities grounded
+          in your data. Build and customise autonomous AI agents to support
+          employees and customers. Take action faster on tasks like generating
+          lead follow-up plans, creating more engaging marketing campaigns and
+          closing cases faster.
+        </p>
+        <br />
+        <button class="btncolor">Learn more</button>
+      </div>
+    </div>
+
+    <div class="feature-section container">
+      <div class="feature-content">
+        <h2>Bring teams together with fully integrated, customised tools.</h2>
+        <br />
+        <p>
+          With a a full view of your business data, employees have the context
+          they need to make the most of every interaction. Service reps can
+          identify sales opportunities, merchants can resolve service issues and
+          marketers can upsell dynamically.
+        </p>
+      </div>
+      <div class="feature-image">
+        <img src="img/f3.webp" alt="CRM features" />
+      </div>
+    </div>
+
+    <div class="feature-section container">
+      <div class="feature-image">
+        <img src="img/f4.webp" alt="AI features" />
+      </div>
+      <div class="feature-content">
+        <h2>Find solutions tailored to your industry and business size.</h2>
+        <br />
+        <p>
+          Get CRM solutions built on over 25 years of experience, best practices
+          and industry-specific needs for healthcare, retail, high tech, the
+          public sector and many more.<br />
+        </p>
+        <br />
+        <a class="btncolor">See all industries</a>
+      </div>
+    </div>
+    <h2 class="header-twoone">
+      One platform that strengthens all your <br />
+      customer relationships.
+    </h2>
+
+    <br />
+    <br />
+
+    <div class="cards-container">
+      <div class="cardone ai">
+        <h3>Artificial Intelligence</h3>
+        <p>
+          Drive productivity and personalisation with predictive, generative and
+          conversational AI that works across your entire CRM.
+        </p>
+        <a href="#">Explore AI</a>
+      </div>
+
+      <div class="cardone sales">
+        <h3>Sales Cloud</h3>
+        <p>
+          Accelerate growth and boost productivity with built-in AI – from lead
+          management to forecasting to closing deals.
+        </p>
+        <br />
+        <a href="#">Explore Sales Cloud</a>
+      </div>
+
+      <div class="cardone service">
+        <h3>Service Cloud</h3>
+        <p>
+          Transform service to improve customer experiences and engagement with
+          streamlined processes, automation and service operations.
+        </p>
+        <a href="#">Explore Service Cloud</a>
+      </div>
+    </div>
+
+    <section class="sectionone">
+      <div class="cards-containerone">
+        <div class="cardone cloud">
+          <h3>Service Cloud</h3>
+          <p>
+            Transform service to improve customer experiences and engagement
+            with streamlined processes, automation and service operations.
+          </p>
+          <a href="#">Explore Service Cloud</a>
+        </div>
+
+        <div class="cardone marketing">
+          <h3>Service Cloud</h3>
+          <p>
+            Transform service to improve customer experiences and engagement
+            with streamlined processes, automation and service operations.
+          </p>
+          <a href="#">Explore Service Cloud</a>
+        </div>
+      </div>
+
+      <center>
+        <a href="" class="allproducts">View All Products</a>
+      </center>
+    </section>
+
+    <div class="container contone">
+      <h2 class="small">
+        From small businesses to large <br />
+        enterprises, businesses are growing with <br />
+        Salesforce.
+      </h2>
+    </div>
+
+    <section class="crm-section">
+      <div class="card-wrapper">
+        <div class="cardoneCRM">
+          <h2>
+            Find the CRM that fits <br />
+            your business size.
+          </h2>
+        </div>
+        <div class="cardone ai">
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Drive productivity and personalisation with predictive, generative
+            and conversational AI that works across your entire CRM.
+          </p>
+          <a href="#">Explore AI</a>
+        </div>
+
+        <div class="cardone ai">
+          <h3>Artificial Intelligence</h3>
+          <p>
+            Drive productivity and personalisation with predictive, generative
+            and conversational AI that works across your entire CRM.
+          </p>
+          <a href="#">Explore AI</a>
+        </div>
+      </div>
+
+      <a href="#" class="crm-sectionbtn">See CRM Pricing and options</a>
+    </section>
+
+    <section class="stores container">
+      <h2>
+        See how customers transform their business with <br />CRM, trusted AI
+        and data.
+      </h2>
+      <center>
+        <a href="" class="storeslink">Sell all stores</a>
+      </center>
+    </section>
+
+    <section class="logo-section">
+      <div class="logo-card">
+        <img src="img/logo1.webp" alt="Wyndham Hotels" />
+      </div>
+      <div class="logo-card">
+        <img src="img/logo2.webp" alt="RBC Wealth Management" />
+      </div>
+      <div class="logo-card">
+        <img src="img/logo3.webp" alt="Wiley" />
+      </div>
+      <div class="logo-card">
+        <img src="img/logo4.webp" alt="Grammarly" />
+      </div>
+    </section>
+
+    <center>
+      <h2 class="container business">
+        Read these articles on how CRM can
+        <br />solve your business needs.
+      </h2>
+    </center>
+
+    <div class="page container">
+      <div class="left">
+        <h2>
+          Explore CRM that's <br />
+          made for your <br />business type.
+        </h2>
+      </div>
+      <div class="right">
+        <button class="arrow-btn arrow-left hidden" id="prevBtn">
+          &#10094;
+        </button>
+
+        <div class="business-cards" id="business-cards">
+          <div class="businesscardsCont">
+            <h3>Small Business CRM</h3>
+            <p>
+              Running a small business is no easy task but finding the right CRM
+              can make a big difference.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+
+          <div class="businesscardsCont">
+            <h3>Startup CRM</h3>
+            <p>
+              See how a CRM can help streamline processes, gain insights and
+              deepen relationships with customers and stakeholders.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+
+          <div class="businesscardsCont">
+            <h3>Real Estate CRM</h3>
+            <p>
+              Transform your real estate business by organising contacts,
+              automating work and improving decision-making.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+        </div>
+        <button class="arrow-btn arrow-right" id="nextBtn">&#10095;</button>
+      </div>
+    </div>
+    <!-- secont -->
+
+    <div class="pagearrow container">
+      <div class="leftarrow">
+        <h2>Learn more about key CRM topics.</h2>
+      </div>
+      <div class="rightarrow">
+        <button class="arrow-btn arrow-left hidden" id="prevBtnarrow">
+          &#10094;
+        </button>
+
+        <div class="business-cardsarrow" id="business-cardsarrow">
+          <div class="businesscardsContarrow">
+            <h3>CRM Best Practices</h3>
+            <p>
+              Make the most of your CRM and set your business up for success and
+              with these 8 steps.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+
+          <div class="businesscardsContarrow">
+            <h3>CRM Database</h3>
+            <p>
+              Use customer data to strenghthen relationships and streamline
+              efficiency across all channels and teams.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+
+          <div class="businesscardsContarrow">
+            <h3>CRM Strategy</h3>
+            <p>
+              Follow these steps to create a plan for using your CRM to the
+              fullest.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+
+          <div class="businesscardsContarrow">
+            <h3>B2B CRM</h3>
+            <p>
+              Learn how CRM features can play a key role in the unique B2B sales
+              process and beyond.
+            </p>
+            <a href="#">Read the article</a>
+          </div>
+        </div>
+        <button class="arrow-btn arrow-right" id="nextBtnarrow">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <center>
+      <h2 class="container research">
+        Keep up with the latest in CRM with guides, <br />
+        research, and insights.
+      </h2>
+    </center>
+
+    <div class="section-two-section">
+      <div class="cards-containercards">
+        <div class="cardtwo">
+          <img src="img/c1.webp" alt="" />
+
+          <span class="tagone">Demo</span>
+          <h3>Experience Salesforce with an interactive demo.</h3>
+
+          <a href="#" class="crmone">Try it</a>
+        </div>
+        <div class="cardtwo">
+          <img src="img/c2.webp" alt="Card 2" />
+
+          <span class="tagone">CRM</span>
+          <h3>
+            Learn how CRM brings teams together to build a 360-degree view of
+            your customer.
+          </h3>
+
+          <a href="#" class="crmone">See more</a>
+        </div>
+
+        <div class="cardtwo">
+          <img src="img/c3.webp" style="margin-top: -31px" alt="Card 2" />
+
+          <span class="tagone">Guide</span>
+          <h3>
+            Become an Agentic Enterprise: Transform your AI potential into a
+            business reality.
+          </h3>
+
+          <a href="#" class="crmone">Get the guide</a>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <a href="#" class="classnext">See all resources</a>
+    </center>
+    <center>
+      <h2 class="nextstep">Take the next step with the world's #1 AI CRM.</h2>
+    </center>
+
+    <div class="section-twothree">
+      <div class="cards-containerthree">
+        <div class="cardthree">
+          <span><i class="ri-mac-fill"></i></span>
+
+          <h3>Start your trial.</h3>
+          <p>
+            Try Salesforce CRM free for 30 days. No credit card required.
+            Nothing to install.
+          </p>
+          <a href="#" class="crmthree">Try for free</a>
+        </div>
+        <div class="cardthree">
+          <span><i class="ri-phone-fill"></i></span>
+
+          <h3>Talk to an expert.</h3>
+          <p>
+            Ask about Salesforce products, pricing, implementation, or anything
+            else. Our highly trained reps are standing by, ready to help.
+          </p>
+          <a href="#" class="crmthree"
+            >Contact us<i
+              class="ri-external-link-line"
+              style="font-size: 15px; text-decoration: none"
+            ></i
+          ></a>
+        </div>
+
+        <div class="cardthree">
+          <span><i class="ri-mail-fill"></i></span>
+
+          <h3>Stay up to date.</h3>
+          <p>
+            Get the latest research, industry insights, and product news
+            delivered straight to your inbox.
+          </p>
+          <a href="#" class="crmthree">Sign up for newsletter</a>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <h2 class="asked">Salesforce CRM frequently asked questions</h2>
+    </center>
+
+    <div class="faq container">
+      <!-- 1 -->
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>Is Salesforce a CRM?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Yes. Salesforce CRM offers AI-powered
+          <a href="#">customer relationship management (CRM)</a>
+          software that makes it easier for companies to build customer
+          relationships, be more productive, and increase efficiency. This helps
+          businesses of all sizes and in all industries connect with customers
+          and prospects at scale.
+        </p>
+        <p>
+          Salesforce CRM brings together all your data onto
+          <a href="#">one integrated platform</a> that unites your
+          <a href="#">sales</a>, <a href="#">service</a>,
+          <a href="#">marketing</a>, <a href="#">commerce</a>, and
+          <a href="#">IT teams</a> with a single, shared view of your customer.
+        </p>
+      </div>
+      <!-- 2 -->
+      <div class="faq-header" onclick="toggleFAQtwo()">
+        <h2>Is Salesforce an online CRM?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Yes. Salesforce is an online CRM, also known as
+          <a href="#">a cloud-based CRM.</a> It is a
+          <a href="#">Software as a Service (SaaS)</a>platform, which delivers
+          applications over the Internet. As a cloud-based CRM system, all
+          platform hosting and maintenence is performed by Salesforce,
+          eliminating many of the costs and responsibilities involved in
+          maintaining CRM infrastructure and security management.
+        </p>
+      </div>
+
+      <!-- 3 -->
+
+      <div class="faq-header" onclick="toggleFAQ3()">
+        <h2>How much does Salesforce CRM cost?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          There are a variety of Salesforce
+          <a href="#">CRM pricing </a> options. You can also view all
+          <a href="#">Salesforce product pricing here.</a>
+        </p>
+      </div>
+
+      <!-- 4 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>How easy is it to use Salesforce?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Salesforce was built to be easy-to-use by all employees across your
+          entire organisation. Salesforce has an intuitive interface, which lets
+          you interact with Salesforce CRM through
+          <a href="#">conversational AI</a>, the way you would speak to a
+          colleague. With <a href="#"> Trailhead,</a>Salesforce's free online
+          learning platform, anyone can learn in-demand skills, earn
+          resume-worthy credentials, gain <a href=""> CRM certification</a> and
+          connect to new career opportunities.
+        </p>
+      </div>
+      <!-- 5 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>What are the most popular CRM features?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          There are many <a href="">CRM features</a> that benefit businesses.
+          Some of them include contact management, collaboration tools like
+          <a href=""> Slack,</a><a href="">automation,</a
+          ><a href=""> analytics </a> and <a href=""> reporting, </a
+          ><a href=""> AI (Artificial Intelligence),</a>
+          <a href=""> customisation</a><a href=""> integration</a
+          ><a href=""> cloud-based mobile accessibility,</a>
+          flexibility and the ability to scale as you grow.
+        </p>
+      </div>
+
+      <!-- 6 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>What are the benefits of CRM?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          <a href="">CRM benefits</a>companies in many different ways. Some of
+          them include more productive sales teams, a single view of the
+          customer, actionable <a href="">analytics </a>and data dashboards,
+          customer-centric <a href="">automation,</a>
+          proactive customer service interactions, simplified collaboration,
+          increased productivity with
+          <a href="">artificial intelligence (AI),</a
+          ><a href=""> integration </a>with your existing business apps, access
+          to your information from anywhere, scalability for growth and security
+          you can trust.
+        </p>
+      </div>
+
+      <!-- 7 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>What are some CRM use cases?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Read about Salesforce CRM <a href="#">customer stories </a>here.
+          Salesforce is used by companies of every size, stage and industry
+          around the world, providing many <a href="#">CRM examples</a>by
+          successful businesses across <a href="">sales,</a
+          ><a href=""> service,</a><a href="">marketing,</a
+          ><a href="">commerce, </a> <a href="">IT</a>and more.
+        </p>
+      </div>
+
+      <!-- 8 -->
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>How does CRM help sales teams?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Salesforce is a sales CRM that helps teams sell faster, smarter and
+          more efficiently. <a href="">Sales Cloud </a>is part of the #1 AI CRM,
+          which empowers sellers, sales leaders, sales operations — and even
+          partners — with data from any source and built-in
+          <a href=""> trusted AI.</a>
+          With Salesforce, sales organisations can engage buyers, improve
+          productivity, close deals faster and grow revenue with sales software
+          on the most complete platform for sales.
+        </p>
+
+        <p>
+          In addition to sales, Salesforce also offers
+          <a href=""> CRM for Marketing (Marketing Cloud),</a>
+          <a href=""> CRM for Service (Service Cloud),</a
+          ><a href="">CRM for Commerce (Commerce Cloud),</a>
+          <a href=""> CRM for Data (Data Cloud) </a>and more. Salesforce CRM and
+          apps provide one single source of truth with the most up to date
+          customer information, helping strengthen the customer relationship at
+          every point of the the customer lifecycle.
+        </p>
+      </div>
+
+      <!-- 9 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>Is Salesforce CRM only for sales teams?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          <a href="">Sales Cloud </a>is just one part of Salesforce CRM, which
+          is built to be used by teams across your business, including
+          <a href=""> Service Cloud,</a><a href="">Marketing Cloud,</a>
+          <a href="">Commerce Cloud, </a
+          ><a href="">Salesforce Platform for IT,</a
+          ><a href="">Data Cloud </a> and more. Salesforce brings your teams
+          together with a consolidated view of customer data, empowering you to
+          nurture relationships with your clients and leads.
+        </p>
+      </div>
+
+      <!-- 10 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>What is CRM in Marketing?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          CRM apps like <a href=""> Marketing Cloud</a>helps businesses manage
+          and optimise marketing efforts with current and potential customers.
+          It enables businesses to create, <a href=""> automate </a> and
+          personalise marketing campaigns using email, social media, mobile
+          messaging, advertising and web channels. Marketing CRM, together with
+          <a href="">marketing AI, </a>utilises your customer data to create
+          personalised communications aimed at growing lasting customer
+          relationships to boost customer retention and revenue. Combined with
+          CRM for <a href="">sales,</a><a href="">service,</a
+          ><a href="">commerce, </a><a href="">data </a> and <a href="">IT,</a>
+          CRM marketing gives you access to unified customer profiles, rapid
+          audience segmentation, content creation, campaign management,
+          analytics and customer journey mapping.
+        </p>
+      </div>
+      <!-- 11 -->
+
+      <div class="faq-header" onclick="toggleFAQ()">
+        <h2>Does Salesforce have CRM integration with other apps?</h2>
+        <button class="toggle-btn" id="toggleIcon">+</button>
+      </div>
+      <div class="faq-content" id="faqContent">
+        <p>
+          Yes. Salesforce is built for <a href="">CRM integration, </a>
+          making sure that your business is able to share data across internal
+          and external applications.
+          <a href="">Salesforce's MuleSoft </a>is a unified platform that
+          provides businesses with the essential building blocks for connected
+          experiences, products and services.
+        </p>
+
+        <p>
+          With Salesforce CRM, you can integrate all of your data, systems or AI
+          models and automate any task or process to transform your business and
+          drive real value. <a href=""> AppExchange </a> is a robust SaaS
+          marketplace, where Salesforce partners build customised apps that can
+          be used with your Salesforce CRM.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer-top">
+        <!-- Left Section -->
+
+        <div class="footer-left">
+          <img
+            src="img/salesforce-with-type-logo1.svg"
+            alt="Salesforce Logo"
+            class="footer-logo"
+          />
+          <div class="social-iconsone">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+          <p class="phone">Call us at 1800-420-7332</p>
+        </div>
+
+        <!-- Right Section (Links) -->
+
+        <div class="footer-right">
+          <div class="column">
+            <h4>New to Salesforce?</h4>
+            <a href="#">Why Salesforce</a>
+            <a href="#">What is CRM?</a>
+            <a href="#">Explore All Products</a>
+            <a href="#">SaaS</a>
+            <a href="#">Customer Success</a>
+            <a href="#">Product Pricing</a>
+          </div>
+
+          <div class="column">
+            <h4>About Salesforce</h4>
+            <a href="#">Our Story</a>
+            <a href="#">Careers</a>
+            <a href="#">Press<i class="ri-external-link-fill"></i></a>
+            <a href="#">Blog<i class="ri-external-link-fill"></i></a>
+            <a href="#"
+              >Security and Performance<i class="ri-external-link-fill"></i
+            ></a>
+            <a href="#">Salesforce.org<i class="ri-external-link-fill"></i></a>
+            <a href="#"
+              >Best CRM Software<i class="ri-external-link-fill"></i
+            ></a>
+            <a href="#">Sustainability<i class="ri-external-link-fill"></i></a>
+            <a href="#">Legal<i class="ri-external-link-fill"></i></a>
+            <a href="#">Give us your Feedback</a>
+          </div>
+
+          <div class="column">
+            <h4>Popular Links</h4>
+            <a href="#"
+              >New Release Features<i class="ri-external-link-fill"></i
+            ></a>
+            <a href="#">Salesforce Mobile App</a>
+            <a href="#"
+              >Business App Store<i class="ri-external-link-fill"></i
+            ></a>
+            <a href="#">Dreamforce<i class="ri-external-link-fill"></i></a>
+            <a href="#">CRM Software</a>
+            <a href="#">Salesforce Plus<i class="ri-external-link-fill"></i></a>
+            <a href="#"
+              >Salesforce for startups<i class="ri-external-link-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Section -->
+
+    <div class="footer-bottom">
+      <div class="left">
+        <i class="ri-global-line"></i>Worldwide<i
+          class="ri-arrow-down-s-line"
+        ></i>
+      </div>
+      <div class="right">
+        <a href="#">Legal</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy</a>
+        <a href="#">Responsible Disclosure</a>
+        <a href="#">Trust</a>
+
+        <a href="#">Contact</a>
+        <a href="#">Cookie Preferences</a>
+        <a href="#">Your Privacy Choices</a>
+      </div>
+    </div>
+    <div class="copyright">
+      © Copyright 2025 Salesforce, Inc.
+      <a href="">All rights reserved.</a> Various trademarks held by their
+      respective owners.
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      // first
+      const container = document.getElementById("business-cards");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      function getCardWidth() {
+        const card = container.querySelector(".businesscardsCont");
+        const style = getComputedStyle(card);
+        return card.offsetWidth + parseInt(style.marginRight);
+      }
+
+      function updateArrows() {
+        prevBtn.classList.toggle("hidden", container.scrollLeft <= 0);
+        nextBtn.classList.toggle(
+          "hidden",
+          container.scrollLeft + container.clientWidth >= container.scrollWidth
+        );
+      }
+
+      nextBtn.addEventListener("click", () => {
+        container.scrollBy({ left: getCardWidth(), behavior: "smooth" });
+        setTimeout(updateArrows, 400);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        container.scrollBy({ left: -getCardWidth(), behavior: "smooth" });
+        setTimeout(updateArrows, 400);
+      });
+
+      updateArrows();
+
+      //  secont
+
+      const containerarrow = document.getElementById("business-cardsarrow");
+      const prevBtnarrow = document.getElementById("prevBtnarrow");
+      const nextBtnarrow = document.getElementById("nextBtnarrow");
+
+      function getCardWidth() {
+        const card = containerarrow.querySelector(".businesscardsContarrow");
+        const style = getComputedStyle(card);
+        return card.offsetWidth + parseInt(style.marginRight);
+      }
+
+      function updateArrowsout() {
+        prevBtnarrow.classList.toggle("hidden", containerarrow.scrollLeft <= 0);
+        nextBtnarrow.classList.toggle(
+          "hidden",
+          containerarrow.scrollLeft + containerarrow.clientWidth >=
+            containerarrow.scrollWidth
+        );
+      }
+
+      nextBtnarrow.addEventListener("click", () => {
+        containerarrow.scrollBy({ left: getCardWidth(), behavior: "smooth" });
+        setTimeout(updateArrows, 400);
+      });
+
+      prevBtnarrow.addEventListener("click", () => {
+        containerarrow.scrollBy({ left: -getCardWidth(), behavior: "smooth" });
+        setTimeout(updateArrows, 400);
+      });
+
+      updateArrowsout();
+    </script>
+  </body>
+</html>
